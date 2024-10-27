@@ -1,0 +1,156 @@
+.dashboard {
+  height: 100vh;
+  display: flex;
+  background-image: url("img/bg.jpg");
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+
+.dashboard h1 {
+  font-family: "tiny5", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+.dashboard p {
+  font-family: "oxanium", sans-serif;
+  font-size: 20px;
+}
+.dashboard h1,
+.dashboard p {
+  color: #c8c8c8;
+  text-shadow: rgba(223, 180, 180, 0.5) 0px 0px 2px;
+}
+
+.dashboard .btn {
+  width: 200px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-family: "oxanium", sans-serif;
+}
+
+.dashboard .btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.order {
+  align-items: start;
+  padding-right: 20px;
+}
+
+.movie-list {
+  background-image: url("img/bg-2.png");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.movie-list h2 {
+  font-family: "oxanium", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.movie-list p {
+  font-family: "oxanium", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Durasi dan gaya transisi */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Membesar sedikit saat hover */
+}
+
+.card .card-body {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-body p {
+  font-family: "oxanium", sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+.footer h3 {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "oxanium", sans-serif;
+}
+
+.footer p {
+  font-weight: 100;
+  font-family: "oxanium", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* media query */
+
+/* laptop device */
+@media (max-width: 1024px) {
+  .dashboard h1 {
+    font-size: 60px;
+  }
+
+  .dashboard p {
+    font-size: 100%;
+  }
+  p {
+    font-size: 100%;
+  }
+}
+
+/* tablet device */
+@media (max-width: 768px) {
+  .dashboard h1 {
+    font-size: 40px;
+  }
+
+  .dashboard p {
+    font-size: 75%;
+  }
+  p {
+    font-size: 75%;
+  }
+  .movie-list h2 {
+
+    padding-top: 50px;
+  }
+}
+
+/* mobile device */
+@media (max-width: 425px) {
+  .dashboard h1 {
+    font-size: 30px;
+  }
+
+  .dashboard p {
+    font-size: 45%;
+  }
+  p {
+    font-size: 45%;
+  }
+}
